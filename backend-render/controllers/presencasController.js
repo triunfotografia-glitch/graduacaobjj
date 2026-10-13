@@ -218,6 +218,12 @@ export async function createPresenca(req, res) {
       status: status.trim(),
     });
 
+    if (novaPresenca?.status === 'closed') {
+      return res.status(409).json({
+        error: 'A chamada para este treino e data já foi encerrada.',
+      });
+    }
+
     return res.status(201).json(novaPresenca);
 
   } catch (error) {
@@ -327,13 +333,19 @@ export async function updatePresenca(req, res) {
       dadosAtualizados
     );
 
-    if (!atualizada) {
+    if (!atualizada || atualizada.status === 'not_found') {
       return res.status(404).json({
         error: 'Presença não encontrada.',
       });
     }
 
-    return res.json(atualizada);
+    if (atualizada.status === 'closed') {
+      return res.status(409).json({
+        error: 'A chamada para este treino e data já foi encerrada.',
+      });
+    }
+
+    return res.json(atualizada.presenca || atualizada);
   } catch (error) {
     console.error('Erro ao atualizar presença:', error);
 
@@ -372,9 +384,15 @@ export async function deletePresenca(req, res) {
 
     const excluida = await deletePresencaRecord(id);
 
-    if (!excluida) {
+    if (!excluida || excluida.status === 'not_found') {
       return res.status(404).json({
         error: 'Presença não encontrada.',
+      });
+    }
+
+    if (excluida.status === 'closed') {
+      return res.status(409).json({
+        error: 'A chamada para este treino e data já foi encerrada.',
       });
     }
 

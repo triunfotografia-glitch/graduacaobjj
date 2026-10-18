@@ -1,0 +1,158 @@
+<resources>
+    <string name="app_name">Dojo LB Graduação</string>
+    <string name="student_detail_title">Detalhes do Aluno</string>
+    <string name="evaluation_title">Avaliação Técnica</string>
+    <string name="report_title">Relatório de Exame</string>
+
+    <!-- Main Screen -->
+    <string name="main_title">Alunos Cadastrados</string>
+    <string name="add_student">+ Novo Aluno</string>
+    <string name="no_students">Nenhum aluno cadastrado</string>
+    <string name="no_students_subtitle">Toque em \"Novo Aluno\" para começar</string>
+    <string name="student_card_positions">Posições: %1$d</string>
+    <string name="student_card_progress">Progresso: %1$d/%2$d</string>
+    <string name="student_card_average">Média: %1$.2f%%</string>
+    <string name="status_in_progress">EM ANDAMENTO</string>
+    <string name="status_approved">APROVADO</string>
+    <string name="status_failed">REPROVADO</string>
+
+    <!-- Student Form -->
+    <string name="form_title_new">Novo Aluno</string>
+    <string name="form_title_edit">Editar Aluno</string>
+    <string name="field_full_name">Nome completo</string>
+    <string name="field_current_belt">Faixa atual</string>
+    <string name="field_desired_belt">Faixa desejada</string>
+    <string name="field_exam_date">Data do exame (DD/MM/AAAA)</string>
+    <string name="field_positions_count">Quantidade de posições</string>
+    <string name="hint_full_name">Digite o nome completo do aluno</string>
+    <string name="hint_exam_date">DD/MM/AAAA</string>
+    <string name="hint_positions_count">Ex: 10</string>
+    <string name="btn_save">Salvar</string>
+    <string name="btn_cancel">Cancelar</string>
+    <string name="validation_name_required">Nome é obrigatório</string>
+    <string name="validation_belt_required">Selecione as faixas</string>
+    <string name="validation_date_required">Data é obrigatória</string>
+    <string name="validation_date_format">Formato inválido. Use DD/MM/AAAA</string>
+    <string name="validation_positions_required">Quantidade de posições é obrigatória</string>
+    <string name="validation_positions_min">Mínimo 1 posição</string>
+    <string name="validation_positions_max">Máximo 50 posições</string>
+    <string name="validation_same_belt">Faixa atual e desejada não podem ser iguais</string>
+
+    <!-- Belt Options -->
+    <string-array name="belt_options">
+        <item>Branca</item>
+        <item>Cinza</item>
+        <item>Amarela</item>
+        <item>Laranja</item>
+        <item>Verde</item>
+        <item>Azul</item>
+        <item>Roxa</item>
+        <item>Marrom</item>
+        <item>Preta</item>
+    </string-array>
+
+    <!-- Student Detail -->
+    <string name="detail_student_info">Informações do Aluno</string>
+    <string name="detail_current_belt">Faixa atual</string>
+    <string name="detail_desired_belt">Faixa desejada</string>
+    <string name="detail_exam_date">Data do exame</string>
+    <string name="detail_total_positions">Total de posições</string>
+    <string name="detail_evaluated_positions">Posições avaliadas</string>
+    <string name="detail_average">Média atual</string>
+    <string name="detail_status">Situação</string>
+    <string name="btn_continue_evaluation">Continuar Avaliação</string>
+    <string name="btn_start_evaluation">Iniciar Avaliação</string>
+    <string name="btn_view_report">Ver Relatório</string>
+    <string name="btn_edit_student">Editar Cadastro</string>
+    <string name="btn_delete_student">Excluir Aluno</string>
+    <string name="confirm_delete_title">Excluir aluno</string>
+    <string name="confirm_delete_message">Tem certeza que deseja excluir %1$s? Todos os dados da avaliação serão perdidos.</string>
+    <string name="confirm_delete_yes">Excluir</string>
+    <string name="confirm_delete_no">Cancelar</string>
+
+    <!-- Evaluation Screen -->
+    <string name="evaluation_instructions">Toque na nota para avaliar cada posição</string>
+    <string name="position_header">Posição %1$d</string>
+    <string name="position_name_hint">Nome da posição (opcional)</string>
+    <string name="btn_add_position">+ Adicionar Posição</string>
+    <string name="btn_remove_position">Remover última</string>
+    <string name="confirm_remove_position_title">Remover posição</string>
+    <string name="confirm_remove_position_message">A última posição será removida. Se já tiver nota, ela será perdida. Continuar?</string>
+    <string name="evaluated_count">Avaliadas: %1$d de %2$d</string>
+    <string name="pending_count">Pendentes: %1$d</string>
+    <string name="provisional_average">Média provisória: %1$.2f%%</string>
+    <string name="btn_finish_evaluation">Finalizar Exame</string>
+    <string name="btn_save_draft">Salvar Rascunho</string>
+
+    <!-- Grade Buttons -->
+    <string name="grade_0">0%</string>
+    <string name="grade_25">25%</string>
+    <string name="grade_50">50%</string>
+    <string name="grade_75">75%</string>
+    <string name="grade_100">100%</string>
+
+    <!-- Finalization -->
+    <string name="finalization_title">Finalização do Exame</string>
+    <string name="finalization_subtitle">Confira todas as notas antes de concluir</string>
+    <string name="finalization_warning_pending">Existem %1$d posições sem avaliação:</string>
+    <string name="finalization_all_evaluated">Todas as posições foram avaliadas</string>
+    <string name="finalization_student_name">Aluno: %1$s</string>
+    <string name="finalization_current_belt">Faixa atual: %1$s</string>
+    <string name="finalization_desired_belt">Faixa desejada: %1$s</string>
+    <string name="finalization_exam_date">Data do exame: %1$s</string>
+    <string name="finalization_total_positions">Total de posições: %1$d</string>
+    <string name="finalization_evaluated_positions">Posições avaliadas: %1$d</string>
+    <string name="finalization_final_average">Média final: %1$.2f%%</string>
+    <string name="finalization_result_approved">RESULTADO: APROVADO</string>
+    <string name="finalization_result_failed">RESULTADO: REPROVADO</string>
+    <string name="finalization_rule_note">Regra: média > 75% = Aprovado | média ≤ 75% = Reprovado</string>
+    <string name="btn_confirm_finish">Confirmar e Finalizar</string>
+    <string name="btn_back_to_evaluation">Voltar à Avaliação</string>
+
+    <!-- Report -->
+    <string name="report_header">Relatório de Exame de Graduação</string>
+    <string name="report_dojo_name">DOJO LB</string>
+    <string name="report_student_name">Aluno: %1$s</string>
+    <string name="report_current_belt">Faixa atual: %1$s</string>
+    <string name="report_desired_belt">Faixa desejada: %1$s</string>
+    <string name="report_exam_date">Data do exame: %1$s</string>
+    <string name="report_positions_table">Posições Avaliadas</string>
+    <string name="report_table_position">Posição</string>
+    <string name="report_table_name">Nome</string>
+    <string name="report_table_grade">Nota</string>
+    <string name="report_final_average">Média final: %1$.2f%%</string>
+    <string name="report_result_approved">APROVADO</string>
+    <string name="report_result_failed">REPROVADO</string>
+    <string name="report_observations">Observações do professor</string>
+    <string name="report_observations_placeholder">Digite observações opcionais…</string>
+    <string name="btn_export_pdf">Exportar PDF</string>
+    <string name="btn_export_csv">Exportar CSV</string>
+    <string name="btn_share_report">Compartilhar</string>
+    <string name="pdf_saved_success">PDF salvo e compartilhado com sucesso</string>
+    <string name="csv_saved_success">CSV salvo e compartilhado com sucesso</string>
+    <string name="export_error">Erro ao exportar: %1$s</string>
+
+    <!-- CSV Export -->
+    <string name="csv_export_single">Exportar CSV deste aluno</string>
+    <string name="csv_export_all">Exportar CSV de todos os alunos</string>
+    <string name="csv_header">Nome do Aluno;Faixa Atual;Faixa Desejada;Data do Exame;Nome da Posição;Nota Percentual;Média Final;Situação</string>
+
+    <!-- Backup/Import -->
+    <string name="menu_backup">Backup de Dados</string>
+    <string name="menu_import">Importar Backup</string>
+    <string name="menu_settings">Configurações</string>
+    <string name="backup_success">Backup exportado com sucesso</string>
+    <string name="backup_error">Erro no backup: %1$s</string>
+    <string name="import_success">Backup importado com sucesso</string>
+    <string name="import_error">Erro ao importar: %1$s</string>
+    <string name="import_duplicate_warning">Alguns registros já existem. Deseja sobrescrever?</string>
+
+    <!-- General -->
+    <string name="loading">Carregando…</string>
+    <string name="saving">Salvando…</string>
+    <string name="saved">Salvo automaticamente</string>
+    <string name="error_generic">Ocorreu um erro inesperado</string>
+    <string name="ok">OK</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+</resources>
